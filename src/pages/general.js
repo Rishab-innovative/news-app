@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 const General = () => {
   const [myData, setMyData] = useState([]);
   useEffect(() => {
+    console.log("final api test");
     fetch(
       "https://newsapi.org/v2/top-headlines?country=in&category=general&apiKey=22b4e6c6f2b94cc19d4eed701db86018"
     )
@@ -20,7 +21,7 @@ const General = () => {
       ) : (
         <Layout>
           <div className="md:text-4xl text-xl mt-[2rem] grid justify-center font-bold text-slate-500">
-            <h2>Top Headlines - general</h2>
+            <h2>Top Headlines - General</h2>
           </div>
 
           <section className="text-gray-600 body-font">
